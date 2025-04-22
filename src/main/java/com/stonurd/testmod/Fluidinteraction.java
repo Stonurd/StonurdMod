@@ -4,20 +4,20 @@ import com.github.alexmodguy.alexscaves.server.block.ACBlockRegistry;
 
 
 import net.minecraft.world.level.block.Blocks;
-import net.minecraft.world.level.material.Fluid;
+//import net.minecraft.world.level.material.Fluid;
 import net.minecraftforge.common.ForgeMod;
-import net.minecraftforge.eventbus.api.IEventBus;
+//import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.fluids.FluidInteractionRegistry;
 import net.minecraftforge.fluids.FluidInteractionRegistry.InteractionInformation;
-import net.minecraftforge.registries.DeferredRegister;
-import net.minecraftforge.registries.ForgeRegistries;
+//import net.minecraftforge.registries.DeferredRegister;
+//import net.minecraftforge.registries.ForgeRegistries;
 
 
 
 public class Fluidinteraction {
 
-      public static final DeferredRegister<Fluid> FLUIDS =
-      DeferredRegister.create(ForgeRegistries.FLUIDS, testmod.MODID);
+   //   public static final DeferredRegister<FluidInteractionRegistry> FLUIDS =
+ //     DeferredRegister.create(ForgeRegistries.FLUIDS, testmod.MODID);
 
         
         public static void postInit() {
@@ -49,8 +49,8 @@ public class Fluidinteraction {
         ));
 }
 
-public static void register(IEventBus eventBus) {
-        FLUIDS.register(eventBus);
- }
+//public static void register(IEventBus eventBus) {
+      //  FLUIDS.register(eventBus);
+ //}
 }
 
