@@ -14,7 +14,7 @@ import net.minecraftforge.fluids.FluidInteractionRegistry.InteractionInformation
 
 
 
-public class Fluidinteraction {
+public class Finteracion {
 
    //   public static final DeferredRegister<FluidInteractionRegistry> FLUIDS =
  //     DeferredRegister.create(ForgeRegistries.FLUIDS, testmod.MODID);
