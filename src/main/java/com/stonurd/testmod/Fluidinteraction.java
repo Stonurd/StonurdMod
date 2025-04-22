@@ -47,13 +47,6 @@ public class Fluidinteraction {
                         (level, currentPos, relativePos, currentState) -> level.getBlockState(currentPos.below()).is(Blocks.NETHERRACK) && level.getBlockState(relativePos).is(Blocks.BLUE_ICE),
                         Blocks.NETHERRACK.defaultBlockState()
         ));
-
-                FluidInteractionRegistry.addInteraction(ForgeMod.LAVA_TYPE.get(), new InteractionInformation(
-                        (level, currentPos, relativePos, currentState) -> level.getBlockState(currentPos.below()).is(Blocks.NETHERITE_BLOCK) && level.getBlockState(relativePos).is(Blocks.BLUE_ICE),
-                        ACBlockRegistry.FLOOD_BASALT.get().defaultBlockState()
-        ));
-
-
 }
 
 public static void register(IEventBus eventBus) {
