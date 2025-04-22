@@ -65,10 +65,10 @@ description='''${mod_description}'''
     versionRange="${minecraft_version_range}"
     ordering="NONE"
     side="BOTH"
-[[dependencies.alexscaves]]
+[[dependencies.${mod_id}]]
     modId="alexscaves"
     mandatory=true
-    versionRange="[2.0.2,)"
+    versionRange="[2.0.2]"
     ordering="NONE"
     side="BOTH"
 
