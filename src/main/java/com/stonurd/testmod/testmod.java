@@ -8,9 +8,6 @@ import net.minecraftforge.event.BuildCreativeModeTabContentsEvent;
 import net.minecraftforge.event.server.ServerStartingEvent;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
-import net.minecraftforge.fluids.FluidInteractionRegistry.FluidInteraction;
-import net.minecraftforge.fluids.FluidInteractionRegistry;
-import net.minecraftforge.fluids.FluidInteractionRegistry.InteractionInformation;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.event.lifecycle.FMLClientSetupEvent;
 import net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEvent;
@@ -54,13 +51,12 @@ public class testmod
 
     public testmod() {
         IEventBus modEventBus = FMLJavaModLoadingContext.get().getModEventBus();
-
+        Finteracion.postInit();
 
         // Register the commonSetup method for modloading
         modEventBus.addListener(this::commonSetup);
         MinecraftForge.EVENT_BUS.register(this);
         MinecraftForge.EVENT_BUS.register(new CommonEvents());
-        Finteracion.postInit();
     
         
 /*
@@ -72,7 +68,7 @@ public class testmod
         CREATIVE_MODE_TABS.register(modEventBus);
 */
         // Register ourselves for server and other game events we are interested in
-        MinecraftForge.EVENT_BUS.register(this);
+//MinecraftForge.EVENT_BUS.register(this);
         // Register the item to a creative tab
         //modEventBus.addListener(this::addCreative);
         // Register our mod's ForgeConfigSpec so that Forge can create and load the config file for us        
