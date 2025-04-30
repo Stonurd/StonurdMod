@@ -1,6 +1,5 @@
 package com.stonurd.testmod;
 
-import com.github.alexmodguy.alexscaves.server.event.CommonEvents;
 import com.mojang.logging.LogUtils;
 import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.common.MinecraftForge;
@@ -56,7 +55,7 @@ public class testmod
         // Register the commonSetup method for modloading
         modEventBus.addListener(this::commonSetup);
         MinecraftForge.EVENT_BUS.register(this);
-        MinecraftForge.EVENT_BUS.register(new CommonEvents());
+//MinecraftForge.EVENT_BUS.register(new CommonEvents());
     
         
 /*
