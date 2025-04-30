@@ -50,7 +50,6 @@ public class testmod
 
     public testmod() {
         IEventBus modEventBus = FMLJavaModLoadingContext.get().getModEventBus();
-        Finteracion.postInit();
 
         // Register the commonSetup method for modloading
         modEventBus.addListener(this::commonSetup);
@@ -74,6 +73,7 @@ public class testmod
         ////context.registerConfig(ModConfig.Type.COMMON, Config.SPEC);
     }
     private void commonSetup(final FMLCommonSetupEvent event) {
+        Finteracion.postInit();
 /*      
         // Some common setup code
         LOGGER.info("HELLO FROM COMMON SETUP");
